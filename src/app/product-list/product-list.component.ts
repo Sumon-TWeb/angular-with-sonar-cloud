@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductListComponent implements OnInit {
   title = "Product List Component";
-  constructor() { }
+  constructor() {
+    this.title = 'Updated';
+  }
 
+  // This function init the execution
   ngOnInit(): void {
+    console.log(this.title);
   }
 
 }
